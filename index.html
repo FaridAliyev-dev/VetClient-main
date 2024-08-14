@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <header>
@@ -24,7 +23,7 @@
                 </ul>
             </div>
             <div class="phone">
-                <button><a href="tel:+421 417 232 781" class="telephone">Call Us: +421 905 500 067</a></button>
+                <button><a href="tel:+421417232781" class="telephone">Call Us: +421 905 500 067</a></button>
             </div>
         </nav>
     </header>
@@ -86,7 +85,6 @@
         <h2 class="reviews-h2"><span>Otázky</span></h2>
         <h1>Často kladené otázky</h1>
 
-
         <div class="faq">
             <button class="accordion">
                 Je potrebné sa objednať?
@@ -97,7 +95,6 @@
                 odpoved
               </p>
             </div>
-    
         </div>
 
         <div class="faq">
@@ -110,7 +107,6 @@
                 odpoved
               </p>
             </div>
-    
         </div>
 
         <div class="faq">
@@ -124,34 +120,28 @@
               </p>
             </div>
         </div>
+    </div>
 
-        <div class="contact-section">
-          <h2 class="contact-h2"><span>Kontaktujte nás</span></h2>
-          <h1 class="contact-h1">Kontaktujte nás</h1>
-          <div class="contact-container">
-            <div class="contact-in">
-              <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.266904619625!2d18.7223039!3d49.2144651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145ebd951a04b3%3A0xa1b63761123e4678!2sPrivate%20veterinary%20ambulance%20%C5%BDilina%20-%20Z%C3%A1vodie%20-%20Cig%C3%A1nik%20Daniel%20MVDr.!5e0!3m2!1sen!2saz!4v1723610917776!5m2!1sen!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              </div>
-              <div class="contact-form">
-                <form>
-                  <input type="text" placeholder="Name" class="contact-form-txt" required />
-                  <input type="email" placeholder="Email" class="contact-form-txt" required />
-                  <textarea placeholder="Message" class="contact-form-textarea" required></textarea>
-                  <input type="submit" name="Submit" class="contact-form-btn" />
-                  <h2 class="socials-h2">Sociálne siete</h2>
-                  <div class="socials">
-
-                    <a href="https://www.facebook.com/" class="social-icon facebook" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                
-                </form>
-              </div>
-            </div>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.266904619625!2d18.7223039!3d49.2144651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145ebd951a04b3%3A0xa1b63761123e4678!2sPrivate%20veterinary%20ambulance%20%C5%BDilina%20-%20Z%C3%A1vodie%20-%20Cig%C3%A1nik%20Daniel%20MVDr.!5e0!3m2!1sen!2saz!4v1723610917776!5m2!1sen!2saz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="footer-info">
+              <h2>Contact Information</h2>
+              <p><strong>Email:</strong> <a href="mailto:ciganikdaniel@gmail.com">ciganikdaniel@gmail.com</a></p>
+              <p><strong>Tel. č.:</strong> <a href="tel:+421905500067">+421 905 500 067</a></p>
+              <p><strong>Adresa:</strong> J. Závodského 436, 010 01 Žilina</p>
+              <h3>Opening Hours</h3>
+              <p>Pondelok - 9:00–13:00, 14:30–18:00</p>
+              <p>Utorok - 9:00–13:00, 14:30–18:00</p>
+              <p>Streda - 9:00–13:00, 14:30–18:00</p>
+              <p>Štvrtok - 9:00–13:00, 14:30–18:00</p>
+              <p>Piatok - 9:00–13:00, 14:30–18:00</p>
+          </div>
+      </div>
+  </footer>
+  
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {  
@@ -159,24 +149,16 @@
       
           accordions.forEach(function(acc) {
             acc.addEventListener("click", function() {
-              // Toggle the active class on the accordion
               this.classList.toggle("active");
-      
-              // Toggle the panel visibility
               var panel = this.nextElementSibling;
               if (panel.style.display === "block") {
                 panel.style.display = "none";
-                this.querySelector(".fa-chevron-down").style.transform = "rotate(0deg)";
               } else {
                 panel.style.display = "block";
-                this.querySelector(".fa-chevron-down").style.transform = "rotate(180deg)";
               }
             });
           });
         });
-
-        
-      </script>
-      
+    </script>
 </body>
 </html>
