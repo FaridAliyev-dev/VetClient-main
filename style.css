@@ -411,7 +411,7 @@ footer {
 
 .footer-distributed h3 {
   color: black;
-  font: normal 36px 'Cookie', cursive;
+  font: normal 36px 'Poppins', arial-sans;
   margin: 0;
 }
 
@@ -540,4 +540,9 @@ footer {
   .footer-distributed .footer-center i {
       margin-left: 0;
   }
+}
+
+.fa-brands {
+  font-size: 30px;
+  padding: 10px;
 }
