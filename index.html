@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veterinary clinic providing comprehensive care for your pets, including vaccinations, diagnostics, and consultations.">
     <title>Cigánik Daniel MVDr</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth; /* Enable smooth scrolling */
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo-main">
-                <img src="logo.png" alt="logo">
+                <img src="logo.png" alt="Clinic Logo" aria-label="Clinic Logo">
             </div>
             <div class="container">
                 <ul class="nav-links">
@@ -29,38 +25,36 @@
                 </ul>
             </div>
             <div class="phone">
-                <button><a href="tel:+421417232781" class="telephone">Call Us: +421 905 500 067</a></button>
+                <button><a href="tel:+421905500067" class="telephone">Call Us: +421 905 500 067</a></button>
             </div>
         </nav>
     </header>
     <div id="landing" class="landing">
-        <img src="main.png" class="main-pic">
+        <img src="main.png" class="main-pic" alt="Main Banner Image">
         <h1 class="landing-h1">Našou prioritou je zdravie Vašich <br> <span>domácich miláčikov.</span></h1>
     </div>
 
-    <div id="about" class="about">
+    <section id="about" class="about">
         <h2 class="about-h2"><span>O nás</span></h2>
         <h1 class="about-h1">Kto sme a čo robíme?</h1>
-        <p class="about-p">Sme skúsená veterinárna klinika, ktorá sa stará o Vaše zvieratká s osobným prístupom. <br>S naším pokročilým vybavením dokážeme rýchlo a presne identifikovať zdravotné problémy vašich miláčikov.
-        <br><br>
-        Kladieme veľký dôraz na preventívnu starostlivosť prostredníctvom pravidelných prehliadok a očkovania, čo nielenže chráni zdravie Vášho zvieraťa, ale aj znižuje Vašu starosť o ich stav.
+        <p class="about-p">
+            Sme skúsená veterinárna klinika, ktorá sa stará o Vaše zvieratká s osobným prístupom. <br>S naším pokročilým vybavením dokážeme rýchlo a presne identifikovať zdravotné problémy vašich miláčikov.
+            <br><br>
+            Kladieme veľký dôraz na preventívnu starostlivosť prostredníctvom pravidelných prehliadok a očkovania, čo nielenže chráni zdravie Vášho zvieraťa, ale aj znižuje Vašu starosť o ich stav.
         </p>
-        <img src="about.jpg" class="about-picture">   
-        <img src="about2.jpg" class="about-picture">
-    </div>
+        <img src="about.jpg" class="about-picture" alt="About Us Image 1">
+        <img src="about2.jpg" class="about-picture" alt="About Us Image 2">
+    </section>
 
-    <div id="services" class="services">
+    <section id="services" class="services">
         <h2 class="services-h2"><span>Služby</span></h2>
         <h1 class="services-h1">Čo ponúkame</h1>
 
         <h3>Preventívna vakcinácia</h3>
         <p>Vakcinácia chráni zvieratá pred vážnymi chorobami, ktorých liečba môže byť náročná a drahá. Očkovanie je jednoduché a reakcie sú zriedkavé, väčšinou len drobné kožné problémy. Po vakcinácii odporúčame dva dni kľudu.
-
             Dodržiavanie očkovacích schém je dôležité pre správnu imunitu.
-            
-            Očkovať sa môžu len zdravé zvieratá.</p>
-
-            <br>
+            Očkovať sa môžu len zdravé zvieratá.
+        </p>
 
         <h3>Sonografické vyšetrenie</h3>
         <p>Ponúkame sonografické vyšetrenie orgánov brušnej dutiny, močových ciest, a sonografiu reprodukčných orgánov, ako aj štítnej žľazy.</p>
@@ -78,103 +72,162 @@
         <p>Poradenstvo poskytujeme s cieľom pomôcť Vám správne sa starať o Vaše zvieratá. Radi Vám poskytneme rady a odporúčania ohľadom zdravia, výživy a právania zvierat, aby ste sa mohli lepšie starať o svojich miláčikov.</p>
 
         <h3>Ostatné služby..</h3>
-    </div>
+    </section>
 
-    <div id="reviews" class="reviews">
+    <section id="reviews" class="reviews">
         <h2><span>Recenzie</span></h2>
         <h1>Sú s nami spokojní</h1>
-    </div>
+    </section>
     <script defer async src='https://cdn.trustindex.io/loader.js?6650d37338fb384260067caf54b' class="reviews-box"></script>
 
-    <div id="questions" class="questions">
+    <section id="questions" class="questions">
         <h2 class="reviews-h2"><span>Otázky</span></h2>
         <h1>Často kladené otázky</h1>
 
         <div class="faq">
-            <button class="accordion">
+            <button class="accordion" aria-expanded="false">
                 Je potrebné sa objednať?
-              <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <div class="panel">
-              <p>
-                odpoved
-              </p>
+            <div class="panel" aria-hidden="true">
+                <p>odpoved</p>
             </div>
         </div>
 
         <div class="faq">
-            <button class="accordion">
+            <button class="accordion" aria-expanded="false">
                 Je u vás možnosť parkovania?
-              <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <div class="panel">
-              <p>
-                odpoved
-              </p>
+            <div class="panel" aria-hidden="true">
+                <p>odpoved</p>
             </div>
         </div>
 
         <div class="faq">
-            <button class="accordion">
+            <button class="accordion" aria-expanded="false">
                 Ako to funguje s očkovaním?
-              <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down"></i>
             </button>
-            <div class="panel">
-              <p>
-                odpoved
-              </p>
+            <div class="panel" aria-hidden="true">
+                <p>odpoved</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer id="contact" class="footer-distributed">
-      <div class="footer-left">
-          <h3>Cigánik Daniel <span>MVDr.</span></h3>
+        <div class="footer-left">
+            <h3>Cigánik Daniel <span>MVDr.</span></h3>
+            <p class="footer-links">
+                <a href="#landing">Domov</a>
+                |
+                <a href="#about">O nás</a>
+                |
+                <a href="#services">Služby</a>
+                |
+                <a href="#reviews">Recenzie</a>
+                |
+                <a href="#contact">Kontakt</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2021 <strong>Cigánik Daniel MVDr.</strong> All rights reserved</p>
+        </div>
 
-          <p class="footer-links">
-              <a href="#landing">Domov</a>
-              |
-              <a href="#about">O nás</a>
-              |
-              <a href="#services">Služby</a>
-              |
-              <a href="#reviews">Recenzie</a>
-              |
-              <a href="#contact">Kontakt</a>
-          </p>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Adresa</span> J. Závodského 436, 010 01 Žilina</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>tel. č. 041 7232781 / pohotovosť: 0948 197 138</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">sagar00001.co@gmail.com</a></p>
+            </div>
+        </div>
 
-          <p class="footer-company-name">Copyright © 2021 <strong></strong> All rights reserved</p>
-      </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>O nás</span>
+                Naša veterinárna klinika ponúka širokú škálu služieb pre zdravie a pohodu vašich zvierat. Sme tu pre vás s profesionálnym prístupom a odbornými službami.
+            </p>
 
-      <div class="footer-center">
-          <div>
-              <i class="fa fa-map-marker"></i>
-              <p><span>Adresa</span>
-                J. Závodského 436, 010 01 Žilina</p>
-          </div>
-
-          <div>
-              <i class="fa fa-phone"></i>
-              <p>tel. č. 041 7232781 / pohotovosť: 0948 197 138</p>
-          </div>
-          <div>
-              <i class="fa fa-envelope"></i>
-              <p><a href="mailto:sagar00001.co@gmail.com">@gmail.com</a></p>
-          </div>
-      </div>
-      <div class="footer-right">
-          <p class="footer-company-about">
-              <span>About the company</span>
-              <strong>Privátna veterinárna ambulancia Žilina - Závodie - Cigánik Daniel MVDr.
-
-              </strong> Naša veterinárna ambulancia sa zaoberá liečením, prevenciou a diagnostikou zvierat všetkých druhov.
-          </p>
-
-          <div class="footer-icons">
-              <a href="https://www.facebook.com/pages/category/Veterinarian/Priv%C3%A1tna-veterin%C3%A1rna-ambulancia-%C5%BDilina---Z%C3%A1vodie---Cig%C3%A1nik-Daniel-MVDr-290303405911833/"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-          </div>
-      </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/CiganikDaniel/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ciganikdaniel/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {  
+        var accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach(function(acc) {
+          acc.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        });
+      });
+
+
+      document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("#landing, #about, #services, #reviews, #questions, #contact");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5 // Adjust this value as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute("id");
+                navLinks.forEach(link => {
+                    link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+                });
+            } else {
+                const id = entry.target.getAttribute("id");
+                navLinks.forEach(link => {
+                    if (link.getAttribute("href") === `#${id}`) {
+                        link.classList.remove("active");
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Smooth scroll behavior
+    navLinks.forEach((link) => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+            // Update active link immediately after scrolling
+            const id = this.getAttribute("href").substring(1);
+            navLinks.forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+            });
+        });
+    });
+});
+
+  </script>
 </body>
 </html>

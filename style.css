@@ -109,14 +109,14 @@ button {
 
 .main-pic {
   height: 500px;
-  background-position: left center; 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-attachment: scroll; 
-  overflow: hidden; 
-  position: relative; 
-  margin: 0; 
-  padding-top: 150px;
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding-top: 250px;
   padding-left: 80px;
 }
 
@@ -317,7 +317,6 @@ span {
 }
 
 .accordion:hover {
-  background-color: #ddd;
 }
 
 .accordion .fa-chevron-down {
@@ -570,3 +569,86 @@ button:active {
   background-color: #004494; /* Change this to your preferred color */
   color: #ffffff; /* Ensure text color is correct */
 }
+
+/* Active link indicator */
+.nav-links a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-pic {
+    height: 300px; /* Adjust height for smaller screens */
+    padding-top: 150px; /* Adjust padding for smaller screens */
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .landing-h1 {
+    font-size: 1.5rem; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .about, .services, .reviews, .questions {
+    padding: 20px;
+  }
+
+  .about-picture, .services-picture, .reviews-picture, .questions-picture {
+    height: 250px; /* Adjust image height */
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main img {
+    height: 50px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+  }
+
+  .main-pic {
+    height: 200px;
+    padding-top: 100px;
+    padding-left: 10px;
+  }
+
+  .landing-h1 {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .about-picture,
+  .services-picture,
+  .reviews-picture,
+  .questions-picture {
+    height: 200px;
+  }
+
+  .footer-distributed {
+    padding: 20px;
+  }
+}
+
+
