@@ -1,10 +1,5 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-* {
-  /* overflow-x: hidden; */
-}
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -124,28 +119,79 @@ button {
   padding-left: 80px;
 }
 
+/* Landing Section */
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative; /* Allows absolutely positioned children */
+  flex-direction: row; /* Default layout for larger screens */
+}
 
+.landing-text {
+  flex: 1;
+  padding-right: 20px; /* Adjust as needed for spacing */
+}
 
-.landing-p {
-  position: absolute;
-  color: white;
-  padding-top: 380px;
-  font-size: 1.5rem;
-  padding-left: 65px;
-  font-weight: bold;
+.landing-picture {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align picture to the right */
+  position: relative; /* Allows absolutely positioned children */
+}
+
+.landing-picture img {
+  max-width: 100%;
+  height: auto;
 }
 
 .landing-h1 {
-  position: absolute; /* Allows you to position the element absolutely within its container */
-  top: 50%; /* Vertically centers the element */
-  right: 20px; /* Positions the element on the right side, adjust the value as needed */
-  transform: translateY(-50%); /* Ensures the element is perfectly centered vertically */
+  position: relative; /* Reset position for larger screens */
   color: black; /* Text color */
-  font-size: 3rem; /* Adjust the font size as needed */
-  padding: 20px; /* Optional padding */
-  text-align: right; /* Ensures the text is aligned to the right */
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Adjust font size as needed */
   font-weight: bold;
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Optional padding */
+}
+
+.landing-p {
+  position: relative; /* Reset position for larger screens */
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  text-align: left; /* Align text to the left */
+}
+
+/* Media query for phone-sized screens */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+
+  .landing-text {
+    padding-right: 0; /* Remove right padding */
+    padding-bottom: 20px; /* Add space below text */
+    order: 2; /* Place text below the picture */
+  }
+
+  .landing-picture {
+    order: 1; /* Place picture on top */
+    margin-bottom: 20px; /* Add space below picture */
+  }
+
+  .landing-h1 {
+    position: static; /* Reset position for mobile */
+    font-size: 2rem; /* Adjust font size for mobile */
+    text-align: center; /* Center text */
+  }
+
+  .landing-p {
+    position: static; /* Reset position for mobile */
+    padding: 0; /* Remove padding for mobile */
+  }
 }
 
 span {
