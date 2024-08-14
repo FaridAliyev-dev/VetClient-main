@@ -97,7 +97,7 @@ nav {
 button {
   padding: 15px;
   margin-right: 10px;
-  background-color: #007bff;
+  background-color: #004a99;
   border-radius: 50px;
   outline: none;
   border: none;
@@ -120,39 +120,46 @@ button {
 }
 
 /* Landing Section */
+/* Landing Section */
 .landing {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   position: relative; /* Allows absolutely positioned children */
-  flex-direction: row; /* Default layout for larger screens */
+  flex-direction: row-reverse; /* Switches the order, placing the picture on the right */
 }
 
 .landing-text {
   flex: 1;
-  padding-right: 20px; /* Adjust as needed for spacing */
+  padding-left: 20px; /* Adjust for spacing on the left */
+  padding-right: 0; /* Remove any right padding */
 }
 
 .landing-picture {
   flex: 1;
   display: flex;
-  justify-content: flex-end; /* Align picture to the right */
-  position: relative; /* Allows absolutely positioned children */
+  justify-content: flex-start; /* Align picture to the left */
+  position: relative;
+  padding-right: 60px; /* Add padding to move it right */
+  margin-right: auto; /* Ensure the picture moves more to the right */
 }
 
 .landing-picture img {
   max-width: 100%;
   height: auto;
+  margin-left: auto; 
 }
 
-.landing-h1 {
+
+.landing-text {
   position: relative; /* Reset position for larger screens */
   color: black; /* Text color */
-  font-size: 2.5rem; /* Adjust font size as needed */
+  font-size: 2.75rem; /* Adjust font size as needed */
   font-weight: bold;
   text-align: left; /* Align text to the left */
   padding: 20px; /* Optional padding */
+  padding-left: 60px;
 }
 
 .landing-p {
@@ -195,7 +202,7 @@ button {
 }
 
 span {
-  color: #007bff; /* Custom blue color */
+  color: #004a99; /* Custom blue color */
   font-weight: 900; /* Bold */
 }
 
@@ -470,7 +477,7 @@ footer {
 }
 
 .footer-distributed h3 span {
-  color: #007bff;
+  color: #004a99;
 }
 
 /* Footer links */
@@ -622,7 +629,7 @@ button:active {
 
 /* Active link indicator */
 .nav-links a.active {
-  background-color: #007bff;
+  background-color: #004a99;
   color: #fff;
 }
 
@@ -782,16 +789,18 @@ button:active {
 /* Existing Styles */
 
 .main-pic {
-  height: 500px;
-  background-position: left center;
+  height: 800px;
+  /* background-position: left center; */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   overflow: hidden;
   position: relative;
   margin: 0;
-  padding-top: 250px;
-  padding-left: 80px;
+  padding-top: 150px;
+  padding-left: 0px;
+  padding-left: 50px;
+  margin-right: -220px;
 }
 
 .landing-p {
@@ -811,7 +820,7 @@ button:active {
   color: black;
   font-size: 2.5rem;
   padding: 20px;
-  text-align: right;
+  text-align: left;
   font-weight: bold;
 }
 
@@ -845,13 +854,11 @@ button:active {
 }
 
 
-body {
-  overflow-x: hidden;
-}
 @media (max-width: 768px) {
   .main-pic {
-    padding-left: 10px;
+    padding-left: 80px;
     padding-bottom: 50px;
+    justify-content: center;
   }
 
   .landing-p {

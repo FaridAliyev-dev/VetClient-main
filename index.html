@@ -25,14 +25,14 @@
                 </ul>
             </div>
             <div class="phone">
-                <button><a href="tel:+421905500067" class="telephone">Call Us: +421 905 500 067</a></button>
+                <button><a href="tel:0417232781" class="telephone">Call Us: 041 7232781</a></button>
             </div>
         </nav>
     </header>
 
     <div id="landing" class="landing">
-        <img src="main.png" class="main-pic" alt="Main Banner Image">
-        <h1 class="landing-h1">Našou prioritou je <span>zdravie</span><br> Vašich domácich miláčikov.</span></h1>
+        <img src="dog.png" class="main-pic" alt="Main Banner Image">
+        <h1 class="landing-text">Našou prioritou je <span>zdravie</span><br> Vašich domácich miláčikov.</span></h1>
     </div>
 
     <section id="about" class="about">
@@ -136,15 +136,11 @@
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span>Adresa</span> J. Závodského 436, 010 01 Žilina</p>
+                <p>J. Závodského 436, 010 01 Žilina</p>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
                 <p>tel. č. 041 7232781 / pohotovosť: 0948 197 138</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:sagar00001.co@gmail.com">sagar00001.co@gmail.com</a></p>
             </div>
         </div>
 
@@ -153,11 +149,6 @@
                 <span>O nás</span>
                 Naša veterinárna klinika ponúka širokú škálu služieb pre zdravie a pohodu vašich zvierat. Sme tu pre vás s profesionálnym prístupom a odbornými službami.
             </p>
-
-            <div class="footer-icons">
-                <a href="https://www.facebook.com/CiganikDaniel/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ciganikdaniel/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
         </div>
     </footer>
 
@@ -230,5 +221,43 @@
 });
 
   </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
