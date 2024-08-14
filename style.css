@@ -577,3 +577,277 @@ button:active {
 
 
 
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .logo-main img {
+    height: 80px;
+  }
+
+  .main-pic {
+    height: 400px;
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+
+  .landing-p {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .landing-h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .about, .services, .reviews, .questions {
+    padding: 30px 20px;
+  }
+
+  .about-h2, .services-h2, .reviews-h2, .questions-h2 {
+    padding-top: 40px;
+  }
+
+  .about-picture, .serivces-picture, .reviews-picture, .questions-picture {
+    height: 300px;
+    padding-right: 10px;
+  }
+
+  .faq {
+    padding: 20px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger-icon {
+    background-color: #007bff;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    display: block;
+  }
+
+  .footer-distributed .footer-center {
+    display: block;
+  }
+
+  .footer-distributed .footer-center i {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .main-pic {
+    height: 300px;
+    padding-top: 100px;
+    padding-left: 10px;
+  }
+
+  .landing-p {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+  .landing-h1 {
+    font-size: 1.8rem;
+    padding: 5px;
+  }
+}
+
+/* Styles for very small screens */
+@media (max-width: 480px) {
+  .logo-main img {
+    height: 60px;
+  }
+
+  .hamburger {
+    font-size: 20px;
+  }
+
+  .hamburger-icon {
+    width: 25px;
+    height: 2px;
+  }
+
+  .main-pic {
+    height: 250px;
+    padding-top: 80px;
+    padding-left: 5px;
+  }
+
+  .landing-p {
+    font-size: 0.9rem;
+    padding-left: 5px;
+  }
+
+  .landing-h1 {
+    font-size: 1.5rem;
+    padding: 3px;
+  }
+}
+
+
+/* Existing Styles */
+
+.main-pic {
+  height: 500px;
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding-top: 250px;
+  padding-left: 80px;
+}
+
+.landing-p {
+  position: absolute;
+  color: white;
+  padding-top: 380px;
+  font-size: 1.5rem;
+  padding-left: 65px;
+  font-weight: bold;
+}
+
+.landing-h1 {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .main-pic {
+    height: 300px;
+    padding-top: 200px; /* Adjust as needed */
+    padding-left: 0; /* Adjust as needed */
+    position: relative; /* Remove absolute positioning */
+  }
+
+  .landing-p {
+    position: static; /* Make the text flow naturally */
+    padding-top: 0; /* Reset padding-top */
+    padding-left: 0; /* Reset padding-left */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    text-align: center; /* Center text */
+  }
+
+  .landing-h1 {
+    position: static; /* Make the heading flow naturally */
+    font-size: 1.8rem; /* Adjust font size for readability */
+    text-align: center; /* Center text */
+    padding-top: 200px;
+  }
+}
+
+
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .main-pic {
+    padding-left: 10px;
+  }
+
+  .landing-p {
+    padding-left: 10px;
+  }
+
+  .landing-h1 {
+    padding: 5px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    overflow-x: hidden;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px; /* Adjust padding for medium screens */
+  }
+
+  /* Example for specific elements */
+  .header, .footer {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Less padding for mobile screens */
+  }
+
+  /* Example adjustments for mobile screens */
+  .header {
+    font-size: 16px; /* Adjust text size for readability */
+  }
+
+  .footer {
+    font-size: 14px; /* Adjust text size for readability */
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically on mobile */
+    align-items: center;
+  }
+
+  .navbar-item {
+    margin: 5px 0; /* Adjust margins for spacing */
+  }
+}
