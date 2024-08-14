@@ -3,7 +3,7 @@
 
 
 * {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -792,6 +792,10 @@ button:active {
     text-align: center; /* Center text */
     padding-top: 200px;
   }
+
+  * {
+    overflow-x: hidden;
+  }
 }
 
 
@@ -857,4 +861,30 @@ body {
   .navbar-item {
     margin: 5px 0; /* Adjust margins for spacing */
   }
+}
+
+
+/* Remove arrows and default styling on links in the navbar */
+.navbar a {
+  appearance: none; /* Remove default appearance */
+  text-decoration: none; /* Remove underline */
+  border: none; /* Remove borders */
+  background: none; /* Remove background */
+  outline: none; /* Remove outline */
+}
+
+/* Additional reset styles if needed */
+.navbar a::-webkit-inner-spin-button,
+.navbar a::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.navbar a::-moz-inner-spin-button {
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.navbar a {
+  -moz-appearance: none; /* Remove arrow buttons in Firefox */
 }
