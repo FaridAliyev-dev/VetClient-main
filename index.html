@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigánik Daniel MVDr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png  ">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-main">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">References</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <button><a href="tel:+421 417 232 781" class="telephone">Call Us: +421 905 500 067</a></button>
+            </div>
+        </nav>
+    </header>
+    <div class="landing">
+        <img src="main.png" class="main-pic">
+        <h1 class="landing-h1">Našou prioritou je zdravie Vašich <br> <span>domácich miláčikov.</span></h1>
+    </div>
+
+    <div class="about">
+        <h2 class="about-h2"><span>O nás</span></h2>
+        <h1 class="about-h1">Kto sme a čo robíme?</h1>
+        <p class="about-p">Sme skúsená veterinárna klinika, ktorá sa stará o Vaše zvieratká s osobným prístupom. <br>S naším pokročilým vybavením dokážeme rýchlo a presne identifikovať zdravotné problémy vašich miláčikov.
+        <br><br>
+        Kladieme veľký dôraz na preventívnu starostlivosť prostredníctvom pravidelných prehliadok a očkovania, čo nielenže chráni zdravie Vášho zvieraťa, ale aj znižuje Vašu starosť o ich stav.
+        </p>
+        <img src="about.jpg" class="about-picture">   
+        <img src="about2.jpg" class="about-picture">
+    </div>
+    
+
+    <div class="services">
+        <h2 class="services-h2"><span>Služby</span></h2>
+        <h1 class="services-h1">Čo ponúkame</h1>
+
+        <h3>Preventívna vakcinácia</h3>
+        <p>Vakcinácia chráni zvieratá pred vážnymi chorobami, ktorých liečba môže byť náročná a drahá. Očkovanie je jednoduché a reakcie sú zriedkavé, väčšinou len drobné kožné problémy. Po vakcinácii odporúčame dva dni kľudu.
+
+            Dodržiavanie očkovacích schém je dôležité pre správnu imunitu.
+            
+            Očkovať sa môžu len zdravé zvieratá.</p>
+
+            <br>
+
+        <h3>Sonografické vyšetrenie</h3>
+        <p>Ponúkame sonografické vyšetrenie orgánov brušnej dutiny, močových ciest, a sonografiu reprodukčných orgánov, ako aj štítnej žľazy.</p>
+
+        <h3>RTG vyšetrenie</h3>
+        <p>RTG vyšetrenie poskytuje podrobný obraz o fungovaní vnútorných orgánov a odhaľuje prípadné nádorové ochorenia a cudzie telesá. Je užitočné pri rozsiahlych poraneniach a zlomeninách.</p>
+
+        <h3>Stomatológia</h3>
+        <p>Preventívna starostlivosť o zuby je dôležitou súčasťou pravidelných prehliadok zvierat. V prípade potreby vyťahujeme mliečne alebo trvalé zuby. Ponúkame aj RTG vyšetrenie koreňových kanálikov a zubov, chirurgické zákroky v ústnej dutine a odstraňovanie zubného kameňa ultrazvukom.</p>
+
+        <h3>Chirurgia</h3>
+        <p>Naša veterinárna klinika ponúka širokú škálu chirurgických zákrokov, ktoré zohľadňujú každú potrebu vášho zvieraťa. Venujeme sa nielen bežným, ale aj rozsiahlym operáciám, ktoré môžu byť nevyhnutné pri komplexných zdravotných problémoch.</p>
+
+        <h3>Poradenstvo</h3>
+        <p>Poradenstvo poskytujeme s cieľom pomôcť Vám správne sa starať o Vaše zvieratá. Radi Vám poskytneme rady a odporúčania ohľadom zdravia, výživy a právania zvierat, aby ste sa mohli lepšie starať o svojich miláčikov.</p>
+
+        <h3>Ostatné služby..</h3>
+    </div>
+
+    <div class="reviews">
+        <h2><span>Recenzie</span></h2>
+        <h1>Sú s nami spokojní</h1>
+    </div>
+    <script defer async src='https://cdn.trustindex.io/loader.js?6650d37338fb384260067caf54b' class="reviews-box"></script>
+
+    <div class="questions">
+        <h2 class="reviews-h2"><span>Otázky</span></h2>
+        <h3>Často kladené otázky</h3>
+
+
+        <div class="faq">
+            <button class="accordion">
+                Je potrebné sa objednať?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                odpoved
+              </p>
+            </div>
+    
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Je u vás možnosť parkovania?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                odpoved
+              </p>
+            </div>
+    
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Ako to funguje s očkovaním?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                odpoved
+              </p>
+            </div>
+    
+        </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var accordions = document.querySelectorAll(".accordion");
+      
+          accordions.forEach(function(acc) {
+            acc.addEventListener("click", function() {
+              // Toggle the active class on the accordion
+              this.classList.toggle("active");
+      
+              // Toggle the panel visibility
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+                this.querySelector(".fa-chevron-down").style.transform = "rotate(0deg)";
+              } else {
+                panel.style.display = "block";
+                this.querySelector(".fa-chevron-down").style.transform = "rotate(180deg)";
+              }
+            });
+          });
+        });
+
+        
+      </script>
+      
+</body>
+</html>
