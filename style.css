@@ -390,7 +390,7 @@ span {
 }
 
 .contact-h1 {
-  color: #0056b3;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -468,4 +468,44 @@ span {
   border-radius: 12px;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Socials Styling */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Icon size */
+  height: 40px; /* Icon size */
+  border-radius: 50%; /* Circular icons */
+  background-color: #f0f0f0; /* Background color of the circle */
+  color: white; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Remove underline */
+}
+
+.facebook {
+  background-color: #3b5998; /* Facebook color */
+}
+
+.instagram {
+  background-color: #e4405f; /* Instagram color */
+}
+
+/* Socials Heading Styling */
+.socials-h2 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #0056b3; /* Heading color */
+  margin-bottom: 10px; /* Space below the heading */
+  font-family: 'Roboto', sans-serif; /* Font family */
+  font-weight: 600; /* Font weight */
 }
