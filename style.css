@@ -20,15 +20,20 @@ body {
 }
 
 /* Navigation Bar */
+/* Navigation Bar */
 nav {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 10;
+  position: fixed; /* Change from relative to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensures it stays above other content */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .logo-main img {
   height: 100px;
@@ -545,4 +550,23 @@ footer {
 .fa-brands {
   font-size: 30px;
   padding: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus,
+button:active {
+  outline: none; /* Removes default outline */
+  box-shadow: none; /* Removes any box-shadow */
+}
+button:focus {
+  background-color: #0056b3; /* Change this to your preferred color */
+  color: #ffffff; /* Ensure text color is correct */
+}
+
+button:active {
+  background-color: #004494; /* Change this to your preferred color */
+  color: #ffffff; /* Ensure text color is correct */
 }

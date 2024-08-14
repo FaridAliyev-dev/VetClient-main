@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,10 +21,11 @@
             </div>
             <div class="container">
                 <ul class="nav-links">
-                    <li><a href="#">Domov</a></li>
-                    <li><a href="#">Služby</a></li>
-                    <li><a href="#">Recenzie</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#landing">Domov</a></li>
+                    <li><a href="#about">O nás</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#reviews">Recenzie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
             <div class="phone">
@@ -29,12 +33,12 @@
             </div>
         </nav>
     </header>
-    <div class="landing">
+    <div id="landing" class="landing">
         <img src="main.png" class="main-pic">
         <h1 class="landing-h1">Našou prioritou je zdravie Vašich <br> <span>domácich miláčikov.</span></h1>
     </div>
 
-    <div class="about">
+    <div id="about" class="about">
         <h2 class="about-h2"><span>O nás</span></h2>
         <h1 class="about-h1">Kto sme a čo robíme?</h1>
         <p class="about-p">Sme skúsená veterinárna klinika, ktorá sa stará o Vaše zvieratká s osobným prístupom. <br>S naším pokročilým vybavením dokážeme rýchlo a presne identifikovať zdravotné problémy vašich miláčikov.
@@ -44,9 +48,8 @@
         <img src="about.jpg" class="about-picture">   
         <img src="about2.jpg" class="about-picture">
     </div>
-    
 
-    <div class="services">
+    <div id="services" class="services">
         <h2 class="services-h2"><span>Služby</span></h2>
         <h1 class="services-h1">Čo ponúkame</h1>
 
@@ -77,13 +80,13 @@
         <h3>Ostatné služby..</h3>
     </div>
 
-    <div class="reviews">
+    <div id="reviews" class="reviews">
         <h2><span>Recenzie</span></h2>
         <h1>Sú s nami spokojní</h1>
     </div>
     <script defer async src='https://cdn.trustindex.io/loader.js?6650d37338fb384260067caf54b' class="reviews-box"></script>
 
-    <div class="questions">
+    <div id="questions" class="questions">
         <h2 class="reviews-h2"><span>Otázky</span></h2>
         <h1>Často kladené otázky</h1>
 
@@ -124,19 +127,20 @@
         </div>
     </div>
 
-    <footer class="footer-distributed">
-
+    <footer id="contact" class="footer-distributed">
       <div class="footer-left">
           <h3>Cigánik Daniel <span>MVDr.</span></h3>
 
           <p class="footer-links">
-              <a href="#">Home</a>
+              <a href="#landing">Domov</a>
               |
-              <a href="#">About</a>
+              <a href="#about">O nás</a>
               |
-              <a href="#">Contact</a>
+              <a href="#services">Služby</a>
               |
-              <a href="#">Blog</a>
+              <a href="#reviews">Recenzie</a>
+              |
+              <a href="#contact">Kontakt</a>
           </p>
 
           <p class="footer-company-name">Copyright © 2021 <strong></strong> All rights reserved</p>
@@ -163,34 +167,14 @@
               <span>About the company</span>
               <strong>Privátna veterinárna ambulancia Žilina - Závodie - Cigánik Daniel MVDr.
 
-              </strong> Naša veterinárna ambulancia, vedená MVDr. Danielom Cigánikom, sa nachádza v Žiline - Závodie. Sme odborníci v oblasti veterinárnej medicíny a poskytujeme komplexné služby pre zdravie a pohodu vašich domácich zvierat. Naša ambulancia je vybavená modernou technikou a ponúkame kvalitnú diagnostiku, liečbu a prevenciu ochorení. Naším cieľom je zabezpečiť najlepšiu možnú starostlivosť pre vašich štvornohých priateľov.
-
-
+              </strong> Naša veterinárna ambulancia sa zaoberá liečením, prevenciou a diagnostikou zvierat všetkých druhov.
           </p>
+
           <div class="footer-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.facebook.com/pages/category/Veterinarian/Priv%C3%A1tna-veterin%C3%A1rna-ambulancia-%C5%BDilina---Z%C3%A1vodie---Cig%C3%A1nik-Daniel-MVDr-290303405911833/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
           </div>
       </div>
-  </footer>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {  
-          var accordions = document.querySelectorAll(".accordion");
-      
-          accordions.forEach(function(acc) {
-            acc.addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.display === "block") {
-                panel.style.display = "none";
-              } else {
-                panel.style.display = "block";
-              }
-            });
-          });
-        });
-    </script>
+    </footer>
 </body>
 </html>
