@@ -872,21 +872,3 @@ body {
   background: none; /* Remove background */
   outline: none; /* Remove outline */
 }
-
-/* Additional reset styles if needed */
-.navbar a::-webkit-inner-spin-button,
-.navbar a::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.navbar a::-moz-inner-spin-button {
-  -moz-appearance: none;
-  margin: 0;
-}
-
-.navbar a {
-  -moz-appearance: none; /* Remove arrow buttons in Firefox */
-}
-
-
