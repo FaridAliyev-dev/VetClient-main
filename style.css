@@ -950,7 +950,7 @@ iframe {
 @media (max-width: 768px) {
   .main-pic {
     height: 330px;
-    margin-top: -150px;
+    /* margin-top: -100px; */
   }
   .landing-text {
     text-align: center; /* Center text horizontally */
