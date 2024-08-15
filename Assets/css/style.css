@@ -107,7 +107,7 @@ button {
 }
 
 .main-pic {
-  height: 500px;
+  height: 700px;
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ button {
   overflow: hidden;
   position: relative;
   margin: 0;
-  padding-top: 250px;
+  padding-top: 160px;
   padding-left: 80px;
 }
 
