@@ -301,7 +301,7 @@ span {
       flex-direction: column;
   }
   .service-section img, .service-section .service-text {
-      width: 100%;
+      width: 70%;
       margin: 0;
   }
   .service-section.reverse {
@@ -469,16 +469,7 @@ footer {
   width: 100%;
 }
 
-/* Remove fixed positioning for smaller screens */
-@media (max-height: 800px) {
-  footer {
-      position: static;
-  }
-  header {
-      padding-top: 40px;
-  }
-  
-}
+
 
 .footer-distributed {
   background-color: rgb(214, 214, 214);
@@ -621,7 +612,7 @@ footer {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 880px) {
+/* @media (max-width: 880px) {
   .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
       display: block;
       width: 100%;
@@ -631,7 +622,7 @@ footer {
   .footer-distributed .footer-center i {
       margin-left: 0;
   }
-}
+} */
 
 .fa-brands {
   font-size: 30px;
@@ -675,7 +666,7 @@ button:active {
 
 
 /* Responsive styles for tablets and smaller screens */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -721,7 +712,7 @@ button:active {
   .faq {
     padding: 20px;
   }
-}
+} */
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
@@ -775,11 +766,6 @@ button:active {
     font-size: 18px;
   }
 
-  .main-pic {
-    height: 300px;
-    padding-top: 100px;
-    padding-left: 10px;
-  }
 
   .landing-p {
     font-size: 1rem;
@@ -793,9 +779,9 @@ button:active {
 }
 
 /* Styles for very small screens */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) { */
   .logo-main img {
-    height: 60px;
+    height: 100px;
   }
 
   .hamburger {
@@ -807,11 +793,6 @@ button:active {
     height: 2px;
   }
 
-  .main-pic {
-    height: 250px;
-    padding-top: 80px;
-    padding-left: 5px;
-  }
 
   .landing-p {
     font-size: 0.9rem;
@@ -822,25 +803,12 @@ button:active {
     font-size: 1.5rem;
     padding: 3px;
   }
-}
+
 
 
 /* Existing Styles */
 
-.main-pic {
-  height: 800px;
-  /* background-position: left center; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  overflow: hidden;
-  position: relative;
-  margin: 0;
-  padding-top: 150px;
-  padding-left: 0px;
-  padding-left: 50px;
-  margin-right: -220px;
-}
+
 
 .landing-p {
   position: absolute;
@@ -865,12 +833,6 @@ button:active {
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
-  .main-pic {
-    height: 300px;
-    padding-top: 200px; /* Adjust as needed */
-    padding-left: 0; /* Adjust as needed */
-    position: relative; /* Remove absolute positioning */
-  }
 
   .landing-p {
     position: static; /* Make the text flow naturally */
@@ -887,18 +849,14 @@ button:active {
     padding-top: 200px;
   }
 
-  * {
+  /* * {
     overflow-x: hidden;
-  }
+  } */
 }
 
 
 @media (max-width: 768px) {
-  .main-pic {
-    padding-left: 80px;
-    padding-bottom: 50px;
-    justify-content: center;
-  }
+
 
   .landing-p {
     padding-left: 10px;
@@ -955,7 +913,6 @@ button:active {
   }
 }
 
-
 /* Remove arrows and default styling on links in the navbar */
 .navbar a {
   appearance: none; /* Remove default appearance */
@@ -973,4 +930,45 @@ button:active {
 iframe {
   outline: 2px solid #004a99;
   border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .landing {
+      text-align: center; /* Center text and elements within the landing section */
+  }
+  
+
+  .landing-text {
+      font-size: 1.5rem; /* Adjusts the font size for better readability on smaller screens */
+      padding: 10px; /* Adds padding for a better layout */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .main-pic {
+    height: 330px;
+    margin-top: -150px;
+  }
+  .landing-text {
+    text-align: center; /* Center text horizontally */
+    padding: 10px; /* Add some padding for spacing */
+  }
+
+  .landing-h1, .landing-p {
+    font-size: 1.5rem; /* Adjust font size for readability */
+    text-align: center; /* Center text */
+    padding: 0; /* Remove extra padding */
+  }
+
+  iframe {
+    width: 300px;
+  }
+
+  .fa-text{
+    padding: 20px;
+  }
+
 }
