@@ -279,6 +279,36 @@ span {
 }
 
 
+.service-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.service-section img {
+  width: 45%;
+  height: auto;
+  margin-right: 5%;
+}
+.service-section .service-text {
+  width: 50%;
+  font-size: 1.2em;
+}
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .service-section {
+      flex-direction: column;
+  }
+  .service-section img, .service-section .service-text {
+      width: 100%;
+      margin: 0;
+  }
+  .service-section.reverse {
+      flex-direction: column;
+  }
+}
+
 
 .reviews {
   text-align: center;
@@ -924,4 +954,9 @@ button:active {
   border: none; /* Remove borders */
   background: none; /* Remove background */
   outline: none; /* Remove outline */
+}
+
+.heading-name {
+  font-size: 33px;
+  margin-top: -1px;
 }
