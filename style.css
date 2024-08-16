@@ -973,3 +973,7 @@ iframe {
 
 }
 
+
+.selector {
+  display: none;
+}

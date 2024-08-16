@@ -62,3 +62,7 @@ button:hover {
 }
 
 
+
+.selector {
+    display: none;
+}
