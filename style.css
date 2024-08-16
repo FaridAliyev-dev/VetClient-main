@@ -1086,7 +1086,7 @@ html {
   }
 }
 .cocreate {
-  position: fixed; /* Use 'position: fixed' instead of 'display: fixed' */
+  display: fixed; /* Use 'position: fixed' instead of 'display: fixed' */
   bottom: 0; /* Position at the bottom of the viewport */
   left: 0; /* Align to the left edge */
   width: 100%; /* Full width */
@@ -1124,3 +1124,34 @@ html {
 }
 
 
+
+
+.footer-line {
+  width: 100%;
+  height: 3px; /* Adjust thickness here */
+  background-color: black;
+  margin-top: 20px; /* Optional: Adjust spacing between footer and line */
+}
+
+footer {
+  margin-bottom: 0; /* Ensure no margin at the bottom of the footer */
+  padding-bottom: 0; /* Ensure no padding at the bottom of the footer */
+}
+
+
+.footer-line {
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding as needed */
+  font-size: 14px; /* Adjust text size */
+  margin: 0;
+}
+
+.footer-line img.coocreate-image {
+  height: 1em; /* Make the logo similar in size to the text */
+  vertical-align: middle; /* Align the image with the text */
+  margin-left: 5px; /* Add space between text and logo */
+}
