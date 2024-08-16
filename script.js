@@ -6,6 +6,3 @@ hamburger.addEventListener('click', () => {
 });
     
 
-
-
-

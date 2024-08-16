@@ -306,9 +306,10 @@ span {
   margin: 20px 0;
 }
 .service-section img {
-  width: 45%;
+  width: 28%;
   height: auto;
   margin-right: 5%;
+  padding: 10px;
 }
 .service-section .service-text {
   width: 50%;
@@ -560,6 +561,7 @@ footer {
 /* Footer Center */
 .footer-distributed .footer-center {
   width: 35%;
+  margin-top: -30px;
 }
 
 .footer-distributed .footer-center i {
@@ -966,6 +968,7 @@ button:active {
 iframe {
   outline: 2px solid #004a99;
   border-radius: 10px;
+  margin-left: 90px;
 }
 
 
@@ -1001,13 +1004,123 @@ iframe {
   }
 
   iframe {
-    width: 300px;
+    width: 250px;
   }
 
   .fa-text{
     padding: 20px;
   }
 
+}
+
+
+.service-text {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.button-contact {
+  font-size: 16px;
+}
+
+.spacing-span {
+  padding: 50px 20px;
+}
+
+.contact-link {
+  color: #004494;
+  scroll-behavior: smooth;
+}
+
+.footer-center {
+  padding: 30px;
+  padding-left: 100px;
+}
+
+.footer-right {
+  padding-top: 20px;
+  margin-left: -100px;
+}
+
+
+@media (max-width: 768px) {
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    display: block;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  .footer-distributed .footer-center {
+    display: block;
+    padding: 0px;
+  }
+
+  .footer-distributed .footer-center i {
+    margin: 0;
+  }
+
+  .footer-distributed .footer-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  iframe {
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px
+  }
+}
+.cocreate {
+  position: fixed; /* Use 'position: fixed' instead of 'display: fixed' */
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Full width */
+  text-align: center;
+  color: white;
+  background: black;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+
+
+@media (max-width: 480px) {
+  .footer-center {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center-align icon and text horizontally */
+    margin-bottom: 15px; /* Space between items */
+  }
+
+  .contact-item i {
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+
+  .contact-item p {
+    margin: 0; /* Remove default margins on paragraphs */
+  }
 }
 
 
