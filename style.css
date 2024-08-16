@@ -754,6 +754,13 @@ button:active {
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
+
+  .footer-distributed .footer-center p {
+    display: block;
+    color:  black;
+    vertical-align: middle;
+    margin: 0;
+  }
   .nav-links {
     flex-direction: column;
     position: absolute;
@@ -1055,6 +1062,7 @@ html {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    display: fixed;
   }
 
   .footer-distributed .footer-left,
@@ -1071,6 +1079,7 @@ html {
 
   .footer-distributed .footer-center i {
     margin: 0;
+    margin-top: 20px;
   }
 
   .footer-distributed .footer-icons a {
@@ -1155,3 +1164,4 @@ footer {
   vertical-align: middle; /* Align the image with the text */
   margin-left: 5px; /* Add space between text and logo */
 }
+
