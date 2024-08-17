@@ -330,6 +330,20 @@ span {
 }
 @media (max-width: 768px) {
 
+  #about-wrapper {
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-top: 160px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 900px; 
+  }
+
   .coocreate-image {
     height: 20px; 
     width: auto;
