@@ -219,6 +219,8 @@ span {
   margin: 0 auto;
 }
 
+
+
 #about-wrapper {
   background-color: rgba(211, 211, 211, 0.3);
   width: 100%;
@@ -327,6 +329,27 @@ span {
   flex-direction: row-reverse;
 }
 @media (max-width: 768px) {
+
+  .coocreate-image {
+    height: 20px; 
+    width: auto;
+    /* padding-right: 500px; */
+  }
+  .footer-copyright {
+    /* padding-left: 500px; */
+  }
+  .footer-line {
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+  }
+
+  .wrapper-h3 {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
   .service-section {
       flex-direction: column;
   }
@@ -1170,5 +1193,76 @@ footer {
   height: 1em; /* Make the logo similar in size to the text */
   vertical-align: middle; /* Align the image with the text */
   margin-left: 5px; /* Add space between text and logo */
+}
+
+
+
+.service-text-contact {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+#wrapper-contact {
+  background-color: rgba(211, 211, 211, 0.3);
+  width: 600px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wrapper-h3 {
+  margin-top: -25px;
+}
+
+.span-footer {
+  color: #004494;
+
+}
+
+@media (min-width: 768px) {
+.footer-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; 
+}
+
+.footer-copyright {
+  padding-left: 500px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info p {
+  margin-right: 10px;
+
+}
+
+.coocreate-image {
+  height: 20px; 
+  width: auto;
+  padding-right: 500px;
+}
+
+
+
+.mvdr, .heading-name {
+  color: #004494;
+  font-size: 25px;
+  padding-left: 250px;
+}
+
+
 }
 

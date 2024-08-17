@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="vetzilina.sk logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="app.js"></script>
 
        <!-- Meta Description -->
        <meta name="description" content="Vet Clinic Žilina offers professional veterinary services for your pets. Visit us for comprehensive care, including check-ups, vaccinations, and emergency services.">
@@ -32,7 +33,12 @@
        <meta name="twitter:image" content="path_to_image.jpg">
    
 </head>
-<body oncontextmenu="return false">
+<body>
+
+    <div class="hidden">Content 1</div>
+    <div class="hidden">Content 2</div>
+    <div class="hidden">Content 3</div>
+
     <header>
         <nav>
             <div class="logo-main" href="">
@@ -55,7 +61,7 @@
 
     <div id="landing" class="landing">
         <img src="dog.png" class="main-pic" alt="Main Banner Image">
-        <h1 class="landing-text">Našou prioritou je <span>zdravie</span><br> Vašich domácich miláčikov.<br><p class="heading-name"><span>MVDr.</span> Daniel Cigánik</p></span></h1>
+        <h1 class="landing-text">Našou prioritou je <span>zdravie</span><br> Vašich domácich miláčikov.<br><p class="heading-name"><div class="mvdr">MVDr.</span> Daniel Cigánik</div></p></span></h1>
     </div>
 
     <div id="about-wrapper">
@@ -86,7 +92,7 @@
         </div>
 
         <div class="service-section reverse">
-            <img src="b (1).jpg" alt="" class="picture-png">
+            <img src="b (4).jpg" alt="" class="picture-png">
             <div class="service-text">
                 <h3>Sonografické vyšetrenie</h3>
                 <p>Ponúkame sonografické vyšetrenie orgánov brušnej dutiny, močových ciest, a sonografiu reprodukčných orgánov, ako aj štítnej žľazy.</p>
@@ -102,7 +108,7 @@
         </div>
 
         <div class="service-section reverse">
-            <img src="b (3).jpg" alt="" class="picture-png">
+            <img src="b (1).jpg" alt="" class="picture-png">
             <div class="service-text">
                 <h3>Stomatológia</h3>
                 <p>Preventívna starostlivosť o zuby je dôležitou súčasťou pravidelných prehliadok zvierat. V prípade potreby vyťahujeme mliečne alebo trvalé zuby. Ponúkame aj RTG vyšetrenie koreňových kanálikov a zubov, chirurgické zákroky v ústnej dutine a odstraňovanie zubného kameňa ultrazvukom.</p>
@@ -110,7 +116,7 @@
         </div>
 
         <div class="service-section">
-            <img src="b (4).jpg" alt="" class="picture-png">
+            <img src="b (3).jpg" alt="" class="picture-png">
             <div class="service-text">
                 <h3>Chirurgia</h3>
                 <p>Naša veterinárna klinika ponúka širokú škálu chirurgických zákrokov, ktoré zohľadňujú každú potrebu vášho zvieraťa. Venujeme sa nielen bežným, ale aj rozsiahlym operáciám, ktoré môžu byť nevyhnutné pri komplexných zdravotných problémoch.</p>
@@ -123,14 +129,19 @@
                 <h3>Poradenstvo</h3>
                 <p>Poradenstvo poskytujeme s cieľom pomôcť Vám správne sa starať o Vaše zvieratá. Radi Vám poskytneme rady a odporúčania ohľadom zdravia, výživy a právania zvierat, aby ste sa mohli lepšie starať o svojich miláčikov.</p>
             </div>
-        </div>
 
-        <div class="service">
-            <div class="service-text">
-                <h3>Pre ďalšie služby <a href="#contact" class="contact-link">kontaktujte</a> kliniku</h3>
+            
+        </div>
+        <div class="parent-container">
+            <div id="wrapper-contact">
+              <div class="service">
+                <div class="service-text-contact">
+                  <h3 class="wrapper-h3">Pre ďalšie služby <a href="041 7232781" class="contact-link">kontaktujte </a> kliniku</h3>
+                </div>
+              </div>
             </div>
-        </div>
-
+          </div>
+          
 
     </section>
 
@@ -207,8 +218,13 @@
         </div>
     </footer>
     <div class="footer-line">
-        Webstránku vytvoril 
-        <img src="coocreate.svg" class="coocreate-image">
+        <div class="footer-copyright">
+          <p>Copyright © 2024 VetŽilina</p>
+        </div>
+        <div class="footer-info">
+          <p>Webstránku vytvoril</p>
+          <a href="https://cocreate.sk/"><img src="coocreate.svg" class="coocreate-image" alt="Coocreate Logo"></a>
+        </div>
       </div>
       
 
@@ -281,6 +297,44 @@
 });
 
   </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
