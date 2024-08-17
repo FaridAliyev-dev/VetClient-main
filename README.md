@@ -12,6 +12,13 @@ Welcome to the official repository for the **Veterinárna klinika Žilina** webs
 - **Pet Health Focus:** Emphasizes the health and well-being of pets.
 - **Doctor Information:** Highlights Dr. Daniel Cigánik as the lead veterinarian.
 
+## 🛠️ Contributing
+We welcome contributions to improve the website. Please submit a pull request with any enhancements or bug fixes.
+
+## 👥 Credits
+- **Development Team: This website was created by the CoCreate team.
+- **Design: CoCreate's developers ensured the site is user-friendly and visually appealing.
+
 ## 📑 Table of Contents
 
 1. [Introduction](#introduction)
