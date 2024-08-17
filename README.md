@@ -16,8 +16,8 @@ Welcome to the official repository for the **Veterinárna klinika Žilina** webs
 We welcome contributions to improve the website. Please submit a pull request with any enhancements or bug fixes.
 
 ## 👥 Credits
-- **Development Team:** This website was created by the CoCreate team.  [CoCreate](#https://cocreate.sk/)
-- **Design:** CoCreate's developers ensured the site is user-friendly and visually appealing.  [CoCreate](#https://cocreate.sk/)
+- **Development Team:** This website was created by the CoCreate team.  [CoCreate](https://cocreate.sk/)
+- **Design:** CoCreate's developers ensured the site is user-friendly and visually appealing.  [CoCreate](https://cocreate.sk/)
 
 ## 📑 Table of Contents
 
