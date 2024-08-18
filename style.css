@@ -1311,8 +1311,7 @@ footer {
   font-size: 21px;
   font-weight: 650;
   overflow: hidden;
-
-
+  margin-right: 20px;
 }
 
 .menu li a::before {
@@ -1369,7 +1368,7 @@ footer {
       background-color: white;
   }
   .menu li {margin-top: 40px;}
-  .menu li a {padding: 10px;}
+  .menu li a {padding: 10px;font-size: 25px;}
   .open-menu , .close-menu {display: block;}
   #check:checked ~ .menu {right: 0;}
 }
