@@ -1347,8 +1347,12 @@ footer {
 }
 #check {display: none;}
 @media(max-width: 1251px){
-
-  .logo span {
+  
+  .logo {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  .logo p {
     font-size: 15px;
     color: black;
     font-weight: 500;
@@ -1409,7 +1413,7 @@ footer {
   margin-right: 30px; 
 }
 @media(min-width: 1251px){
-.logo span {
+.logo p {
   font-size: 20px; 
   line-height: 1; 
   display: inline-block;
