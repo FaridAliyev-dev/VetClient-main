@@ -1256,9 +1256,7 @@ footer {
   padding: 10px; 
 }
 
-.footer-copyright {
-  padding-left: 500px;
-}
+
 
 .footer-info {
   display: flex;
@@ -1267,7 +1265,7 @@ footer {
 
 .footer-info p {
   margin-right: 10px;
-
+  margin-left: 50px;
 }
 
 .coocreate-image {
@@ -1275,7 +1273,9 @@ footer {
   width: auto;
   padding-right: 500px;
 }
-
+.footer-copyright {
+  padding-left: 500px;
+}
 
 
 .mvdr, .heading-name {
@@ -1420,3 +1420,13 @@ footer {
   color: black
 }
 }
+
+.footer-info p {
+  margin-left: 50px;
+}
+
+@media(max-width: 1251px){
+  .footer-info p {
+    margin-left: 0;
+  }
+  }
