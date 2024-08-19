@@ -1298,7 +1298,7 @@ footer {
   background-color: var(--color2);
   padding: 12px 20px;
 }
-.logo img {width: 100px;margin: -30px;}
+.logo img {width: 120px;padding-left: 50px;margin-bottom: -30px;margin-top: -30px;/* display: flex; */}
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 /* Navigation link styling */
@@ -1348,6 +1348,20 @@ footer {
 #check {display: none;}
 @media(max-width: 1251px){
 
+  .logo span {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+  }
+
+  .logo img {
+    padding: 0;
+    height: 90px;
+    width: 90px;
+  }
+
   .about-picture img {
     width: 170%;
     height: 350px;
@@ -1384,4 +1398,21 @@ footer {
 
 #about {
   scroll-margin-top: 250px; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 30px; 
+}
+@media(min-width: 1251px){
+.logo span {
+  font-size: 20px; 
+  line-height: 1; 
+  display: inline-block;
+  color: black
+}
 }
