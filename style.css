@@ -1467,11 +1467,7 @@ footer {
     }
   }
 
-  @media (max-width: 787px) {
-    .iframe {
-      
-    }
-  }
+
 
   @media (max-width: 768px) {
     .about-picture img {
